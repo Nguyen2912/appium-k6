@@ -36,7 +36,7 @@ public class DriverFactory implements MobileCapabilityTypeEx {
 
             switch (platform) {
                 case android:
-                    appiumDriver = new AndroidDriver<MobileElement>(appiumServer, desiredCaps);
+                    appiumDriver = new AndroidDriver<MobileElement>(appiumServer, desiredCaps);// connect to APPIUM SERVER and Open APP
                     break;
                 case ios:
                     appiumDriver = new IOSDriver<MobileElement>(appiumServer, desiredCaps);
@@ -51,7 +51,7 @@ public class DriverFactory implements MobileCapabilityTypeEx {
         }
 
         // Add IMPLICIT WAIT HERE - try to do find in the time setup
-        appiumDriver.manage().timeouts().implicitlyWait(1L, TimeUnit.SECONDS);
+        appiumDriver.manage().timeouts().implicitlyWait(5L, TimeUnit.SECONDS);
         return appiumDriver;
     }
 }

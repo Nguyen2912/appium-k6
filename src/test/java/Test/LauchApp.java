@@ -22,7 +22,7 @@ public class LauchApp {
             //Init appium sesion
 
             URL appiumServer = new URL("http://localhost:4723/wd/hub");// connect to APPIUM SERVER
-            appiumDriver = new AndroidDriver<MobileElement>(appiumServer,desiredCaps);// connect to APPIUM SERVER
+            appiumDriver = new AndroidDriver<MobileElement>(appiumServer,desiredCaps);// Open APP
 
             //DEBUG PURPOSE ONLY
 
