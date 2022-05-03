@@ -1,33 +1,21 @@
-package Test.lesson_19;
-
-import driver.DriverFactory;
-import driver.Platform;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
+package Test.authen;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test_data.DataObjectBuilder;
 import test_data.models.LoginCredData;
 import test_flows.authentication.LoginFlow;
+import Test.BaseTest;
 
 
-
-public class LoginTest {
+public class LoginTest extends BaseTest {
     @Test(dataProvider = "loginCredData")
     public void testLogin(LoginCredData loginCredData) {
-        AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.android);
-        try {
             String email = loginCredData.getEmail();
             String password = loginCredData.getPassword();
             LoginFlow loginFlow = new LoginFlow(appiumDriver, email, password);
             loginFlow.gotoLoginScreen();
             loginFlow.login();
             loginFlow.verifyLogin();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            appiumDriver.quit();
-        }
     }
 
     @DataProvider

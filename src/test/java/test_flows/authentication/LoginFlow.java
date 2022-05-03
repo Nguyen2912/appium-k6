@@ -49,7 +49,7 @@ public class LoginFlow extends BaseFlow {
         LoginFormComponent loginFormComp = loginScreen.loginFormComponent();
 
         if(isEmailValid && isPasswordValid){
-            verifyCorrectLoginCreds();
+            verifyCorrectLoginCreds(loginScreen);
         }
 
         if(!isEmailValid){
@@ -63,13 +63,13 @@ public class LoginFlow extends BaseFlow {
         System.out.println("\n=====================");
     }
 
-    private void verifyCorrectLoginCreds() {
-        System.out.println("You login correct Email and Password");
+    private void verifyCorrectLoginCreds(LoginScreen loginScreen) {
+        loginScreen.loginDialogComp().clickOnOKBtn();
     }
 
     private void verifyIncorrectEmailStr(LoginFormComponent loginFormComp) {
         String actualInvalidEmailStr = loginFormComp.getInvalidEmailStr();
-        String expectedInvalidEmailStr = "Please enter a valid email address";
+        String expectedInvalidEmailStr = "Please enter a valid email address.";
 
         // Verification
         SoftAssert softAssert = new SoftAssert();
@@ -81,7 +81,7 @@ public class LoginFlow extends BaseFlow {
 
     private void verifyIncorrectPasswordStr(LoginFormComponent loginFormComp) {
         String actualInvalidPasswordStr = loginFormComp.getInvalidPasswordStr();
-        String expectedInvalidEmailStr = "Please enter at least 8 characters";
+        String expectedInvalidEmailStr = "Please enter at least 8 characters.";
 
         // Verification
         SoftAssert softAssert = new SoftAssert();
