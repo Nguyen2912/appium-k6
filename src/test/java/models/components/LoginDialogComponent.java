@@ -17,5 +17,4 @@ public class LoginDialogComponent {
     public void clickOnOKBtn() {
         driver.findElement(okBtnSel).click();
     }
-
 }

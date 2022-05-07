@@ -12,7 +12,7 @@ public class LoginTest extends BaseTest {
     public void testLogin(LoginCredData loginCredData) {
             String email = loginCredData.getEmail();
             String password = loginCredData.getPassword();
-            LoginFlow loginFlow = new LoginFlow(appiumDriver, email, password);
+            LoginFlow loginFlow = new LoginFlow(getDriver(), email, password);
             loginFlow.gotoLoginScreen();
             loginFlow.login();
             loginFlow.verifyLogin();

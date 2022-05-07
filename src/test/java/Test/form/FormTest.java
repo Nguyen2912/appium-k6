@@ -8,8 +8,8 @@ public class FormTest extends BaseTest {
 
     @Test
     public void testFormInput() {
-        System.out.println("--> Session ID: " + appiumDriver.getSessionId());
-        FormFlow formFlow = new FormFlow(appiumDriver);
+        System.out.println("--> Session ID: " + getDriver().getSessionId());
+        FormFlow formFlow = new FormFlow(getDriver());
         formFlow.gotoFormScreen();
         formFlow.fillTheForm();
         formFlow.verifyFormDisplay();
