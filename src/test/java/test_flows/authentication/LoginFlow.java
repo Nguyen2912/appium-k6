@@ -64,6 +64,10 @@ public class LoginFlow extends BaseFlow {
     }
 
     private void verifyCorrectLoginCreds(LoginScreen loginScreen) {
+
+        String currentMsgTitle = loginScreen.loginDialogComp().getLoginMsgTitle();
+        System.out.println("---> currentMsgTitle: " + currentMsgTitle);
+        Assert.assertEquals(currentMsgTitle, "Success", "[ERR] Success Login title is incorrect!");
         loginScreen.loginDialogComp().clickOnOKBtn();
     }
 

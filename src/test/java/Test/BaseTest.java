@@ -3,13 +3,16 @@ import driver.DriverFactory;
 import driver.Platform;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.internal.CapabilityHelpers;
 import io.qameta.allure.Allure;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.OutputType;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import java.io.File;
@@ -26,15 +29,20 @@ public class BaseTest {
 
     private String udid;
     private String systemPort;
+    private String platformName;
+    private String platformVersion;
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     @BeforeTest(description = "Init appium session")
-    @Parameters({"udid", "systemPort"})
-    public void initAppiumSession(String udid, String systemPort) {
+    @Parameters({"udid", "systemPort", "platformName", "platformVersion"})
+    public void initAppiumSession(String udid, String systemPort, String platformName, @Optional("platformVersion") String platformVersion) {
         System.out.println("I'm running before test at: " + new GregorianCalendar().getTime().toString());
         System.out.println(udid + " || " + systemPort);
         this.udid = udid;
         this.systemPort = systemPort;
+        this.platformName = platformName;
+        this.platformVersion = platformVersion;
+
         driverThread = ThreadLocal.withInitial(()->{
             DriverFactory driverThread = new DriverFactory();
             driverThreadPool.add(driverThread);
@@ -48,7 +56,7 @@ public class BaseTest {
     }
     // khoi tao cho con no dung
     protected AppiumDriver<MobileElement> getDriver() {
-        return driverThread.get().getDriver(Platform.android, udid, systemPort);
+        return driverThread.get().getDriver(Platform.valueOf(platformName), udid, systemPort, platformVersion);
     }
 
     @AfterMethod(description = "Capture screenshot")
@@ -68,12 +76,16 @@ public class BaseTest {
             String dateTaken = y + "-" + m + "-" + d + "-" + hr + "-" + min + "-" + sec;
 
             // 3. File location with file extension
+            AppiumDriver<MobileElement> currentDriverThread = driverThread.get().getDriver(Platform.valueOf(platformName), udid, systemPort, platformVersion);
+            Capabilities caps = currentDriverThread.getCapabilities();
+            String currentUDID = CapabilityHelpers.getCapability(caps, "udid", String.class);
+
             String fileLocation =
-                    System.getProperty("user.dir") + "/screenshots/" + testMethodName + "-" + dateTaken + ".png";
+                    System.getProperty("user.dir") + "/screenshots/" + currentUDID + "-" + testMethodName + "-" + dateTaken + ".png";
 
 
             // 4. Save
-            File screenshot = driverThread.get().getDriver(Platform.android, udid, systemPort).getScreenshotAs(OutputType.FILE);
+            File screenshot = driverThread.get().getDriver(Platform.valueOf(platformName), udid, systemPort, platformVersion).getScreenshotAs(OutputType.FILE);
 
             try {
                 FileUtils.copyFile(screenshot, new File(fileLocation));
