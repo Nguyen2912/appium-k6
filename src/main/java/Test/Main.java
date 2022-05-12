@@ -28,7 +28,6 @@ public class Main implements MobileCapabilityTypeEx{
             boolean isMainClass = classInfoName.startsWith("Test.Main");
             if(startWithTestDot && !isBaseTestClass && !isMainClass){
                 testClasses.add(info.load());
-
             }
         }
         //System.out.println(testClasses)->[class Test.authen.LoginTest, class Test.authen.LoginTest2, class Test.form.FormTest]
@@ -36,7 +35,7 @@ public class Main implements MobileCapabilityTypeEx{
         //String platformName = System.getProperty("Platform");
         String platformName = "android";
         if(platformName == null){
-            throw new RuntimeException("Please provide platform via -Dplatform");
+            throw new RuntimeException("Please provide platform via -DPlatform");
         }
         try{
             Platform.valueOf(platformName);
@@ -89,9 +88,6 @@ public class Main implements MobileCapabilityTypeEx{
         suites.add(suite);
         // Imvoke Run Method
         testNG.setXmlSuites(suites);
-        //testNG.run();
-
-
-
+        testNG.run();
     }
 }

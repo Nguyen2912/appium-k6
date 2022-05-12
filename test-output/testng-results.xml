@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" ignored="2" total="9" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression" duration-ms="41076" started-at="2022-05-10T08:48:06 ICT" finished-at="2022-05-10T08:48:47 ICT">
+    <groups>
+    </groups>
+    <test name="R28M804D20E" duration-ms="27423" started-at="2022-05-10T08:48:06 ICT" finished-at="2022-05-10T08:48:34 ICT">
+      <class name="Test.authen.LoginTest">
+        <test-method status="PASS" signature="initAppiumSession(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.authen.LoginTest@5be6e01c]" name="initAppiumSession" is-config="true" duration-ms="29" started-at="2022-05-10T08:48:06 ICT" description="Init appium session" finished-at="2022-05-10T08:48:06 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[R28M804D20E]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8869]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[15.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initAppiumSession -->
+        <test-method status="FAIL" signature="testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest@5be6e01c]" name="testLogin" duration-ms="14282" started-at="2022-05-10T08:48:06 ICT" data-provider="loginCredData" finished-at="2022-05-10T08:48:21 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LoginCredData{email='teo@', password='12345678'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+[ERR] Invalid email format str incorrect expected [Please enter a valid email address.] but found [Please enter a valid email address],
+[ERR] true !=false expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+[ERR] Invalid email format str incorrect expected [Please enter a valid email address.] but found [Please enter a valid email address],
+[ERR] true !=false expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at test_flows.authentication.LoginFlow.verifyIncorrectEmailStr(LoginFlow.java:83)
+at test_flows.authentication.LoginFlow.verifyLogin(LoginFlow.java:56)
+at Test.authen.LoginTest.testLogin(LoginTest.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:Test.authen.LoginTest@5be6e01c]" name="captureScreenshot" is-config="true" duration-ms="515" started-at="2022-05-10T08:48:21 ICT" description="Capture screenshot" finished-at="2022-05-10T08:48:21 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=FAILURE method=LoginTest.testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest@5be6e01c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="FAIL" signature="testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest@5be6e01c]" name="testLogin" duration-ms="4998" started-at="2022-05-10T08:48:21 ICT" data-provider="loginCredData" finished-at="2022-05-10T08:48:26 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LoginCredData{email='teo@sth.xyz', password='1234567'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+[ERR] Invalid email format str incorrect expected [Please enter at least 8 characters.] but found [Please enter at least 8 characters],
+[ERR] true !=false expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+[ERR] Invalid email format str incorrect expected [Please enter at least 8 characters.] but found [Please enter at least 8 characters],
+[ERR] true !=false expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at test_flows.authentication.LoginFlow.verifyIncorrectPasswordStr(LoginFlow.java:95)
+at test_flows.authentication.LoginFlow.verifyLogin(LoginFlow.java:60)
+at Test.authen.LoginTest.testLogin(LoginTest.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:Test.authen.LoginTest@5be6e01c]" name="captureScreenshot" is-config="true" duration-ms="417" started-at="2022-05-10T08:48:26 ICT" description="Capture screenshot" finished-at="2022-05-10T08:48:27 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=FAILURE method=LoginTest.testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest@5be6e01c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest@5be6e01c]" name="testLogin" duration-ms="6399" started-at="2022-05-10T08:48:27 ICT" data-provider="loginCredData" finished-at="2022-05-10T08:48:33 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LoginCredData{email='teo@sth.com', password='12345678'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:Test.authen.LoginTest@5be6e01c]" name="captureScreenshot" is-config="true" duration-ms="1" started-at="2022-05-10T08:48:33 ICT" description="Capture screenshot" finished-at="2022-05-10T08:48:33 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginTest.testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest@5be6e01c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="quitAppiumSession()[pri:0, instance:Test.authen.LoginTest@5be6e01c]" name="quitAppiumSession" is-config="true" duration-ms="518" started-at="2022-05-10T08:48:33 ICT" description="Quit the appium session" finished-at="2022-05-10T08:48:34 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitAppiumSession -->
+      </class> <!-- Test.authen.LoginTest -->
+    </test> <!-- R28M804D20E -->
+    <test name="emulator-5554" duration-ms="41076" started-at="2022-05-10T08:48:06 ICT" finished-at="2022-05-10T08:48:47 ICT">
+      <class name="Test.authen.LoginTest2">
+        <test-method status="PASS" signature="initAppiumSession(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.authen.LoginTest2@a9cd3b1]" name="initAppiumSession" is-config="true" duration-ms="25" started-at="2022-05-10T08:48:06 ICT" description="Init appium session" finished-at="2022-05-10T08:48:06 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8932]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[15.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initAppiumSession -->
+        <test-method status="FAIL" signature="testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest2@a9cd3b1]" name="testLogin" duration-ms="19727" started-at="2022-05-10T08:48:06 ICT" data-provider="loginCredData" finished-at="2022-05-10T08:48:26 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LoginCredData{email='teo@', password='12345678'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+[ERR] Invalid email format str incorrect expected [Please enter a valid email address.] but found [Please enter a valid email address],
+[ERR] true !=false expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+[ERR] Invalid email format str incorrect expected [Please enter a valid email address.] but found [Please enter a valid email address],
+[ERR] true !=false expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at test_flows.authentication.LoginFlow.verifyIncorrectEmailStr(LoginFlow.java:83)
+at test_flows.authentication.LoginFlow.verifyLogin(LoginFlow.java:56)
+at Test.authen.LoginTest2.testLogin(LoginTest2.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:Test.authen.LoginTest2@a9cd3b1]" name="captureScreenshot" is-config="true" duration-ms="609" started-at="2022-05-10T08:48:26 ICT" description="Capture screenshot" finished-at="2022-05-10T08:48:27 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=FAILURE method=LoginTest2.testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest2@a9cd3b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="FAIL" signature="testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest2@a9cd3b1]" name="testLogin" duration-ms="5704" started-at="2022-05-10T08:48:27 ICT" data-provider="loginCredData" finished-at="2022-05-10T08:48:32 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LoginCredData{email='teo@sth.xyz', password='1234567'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+[ERR] Invalid email format str incorrect expected [Please enter at least 8 characters.] but found [Please enter at least 8 characters],
+[ERR] true !=false expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+[ERR] Invalid email format str incorrect expected [Please enter at least 8 characters.] but found [Please enter at least 8 characters],
+[ERR] true !=false expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at test_flows.authentication.LoginFlow.verifyIncorrectPasswordStr(LoginFlow.java:95)
+at test_flows.authentication.LoginFlow.verifyLogin(LoginFlow.java:60)
+at Test.authen.LoginTest2.testLogin(LoginTest2.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:Test.authen.LoginTest2@a9cd3b1]" name="captureScreenshot" is-config="true" duration-ms="518" started-at="2022-05-10T08:48:32 ICT" description="Capture screenshot" finished-at="2022-05-10T08:48:33 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=FAILURE method=LoginTest2.testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest2@a9cd3b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest2@a9cd3b1]" name="testLogin" duration-ms="7449" started-at="2022-05-10T08:48:33 ICT" data-provider="loginCredData" finished-at="2022-05-10T08:48:40 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LoginCredData{email='teo@sth.com', password='12345678'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:Test.authen.LoginTest2@a9cd3b1]" name="captureScreenshot" is-config="true" duration-ms="0" started-at="2022-05-10T08:48:40 ICT" description="Capture screenshot" finished-at="2022-05-10T08:48:40 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginTest2.testLogin(test_data.models.LoginCredData)[pri:0, instance:Test.authen.LoginTest2@a9cd3b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="quitAppiumSession()[pri:0, instance:Test.authen.LoginTest2@a9cd3b1]" name="quitAppiumSession" is-config="true" duration-ms="742" started-at="2022-05-10T08:48:47 ICT" description="Quit the appium session" finished-at="2022-05-10T08:48:47 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitAppiumSession -->
+      </class> <!-- Test.authen.LoginTest2 -->
+      <class name="Test.form.FormTest">
+        <test-method status="FAIL" signature="testFormInput()[pri:0, instance:Test.form.FormTest@13e39c73]" name="testFormInput" duration-ms="5103" started-at="2022-05-10T08:48:40 ICT" finished-at="2022-05-10T08:48:46 ICT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-UQV7475', ip: '192.168.159.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.wdiodemoapp.MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.wdiodemoapp.MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, platformName: android, server:CONFIG_UUID: f606eb66-7cb5-4c66-9745-191..., systemPort: 8932, udid: emulator-5554}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: android, platformVersion: 11, server:CONFIG_UUID: f606eb66-7cb5-4c66-9745-191..., statBarHeight: 135, systemPort: 8932, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1902, left: 0, top: 135, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ec10c6d5-b474-4e9e-a1bc-30c67a2146a5
+*** Element info: {Using=accessibility id, value=Forms}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-UQV7475', ip: '192.168.159.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.wdiodemoapp.MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.wdiodemoapp.MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, platformName: android, server:CONFIG_UUID: f606eb66-7cb5-4c66-9745-191..., systemPort: 8932, udid: emulator-5554}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: android, platformVersion: 11, server:CONFIG_UUID: f606eb66-7cb5-4c66-9745-191..., statBarHeight: 135, systemPort: 8932, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1902, left: 0, top: 135, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ec10c6d5-b474-4e9e-a1bc-30c67a2146a5
+*** Element info: {Using=accessibility id, value=Forms}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at models.components.BottomNavComponent.clickOnFormsIcon(BottomNavComponent.java:32)
+at test_flows.BaseFlow.gotoFormScreen(BaseFlow.java:19)
+at Test.form.FormTest.testFormInput(FormTest.java:13)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormInput -->
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:Test.form.FormTest@13e39c73]" name="captureScreenshot" is-config="true" duration-ms="1053" started-at="2022-05-10T08:48:46 ICT" description="Capture screenshot" finished-at="2022-05-10T08:48:47 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFormInput status=FAILURE method=FormTest.testFormInput()[pri:0, instance:Test.form.FormTest@13e39c73] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+      </class> <!-- Test.form.FormTest -->
+    </test> <!-- emulator-5554 -->
+  </suite> <!-- Regression -->
+</testng-results>

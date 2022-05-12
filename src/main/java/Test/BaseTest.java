@@ -29,7 +29,7 @@ public class BaseTest {
 
     private String udid;
     private String systemPort;
-    private String platformName;
+    private String platformName = System.getProperty("Platform");
     private String platformVersion;
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

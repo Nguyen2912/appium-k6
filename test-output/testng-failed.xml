@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [Regression]" parallel="tests">
+  <test thread-count="10" name="R28M804D20E(failed)" parallel="tests">
+    <parameter name="platformVersion" value="15.0"/>
+    <parameter name="udid" value="R28M804D20E"/>
+    <parameter name="platformName" value="android"/>
+    <parameter name="systemPort" value="8869"/>
+    <classes>
+      <class name="Test.authen.LoginTest">
+        <methods>
+          <include name="testLogin" invocation-numbers="0 1"/>
+          <include name="quitAppiumSession"/>
+          <include name="initAppiumSession"/>
+          <include name="captureScreenshot"/>
+        </methods>
+      </class> <!-- Test.authen.LoginTest -->
+    </classes>
+  </test> <!-- R28M804D20E(failed) -->
+  <test thread-count="10" name="emulator-5554(failed)" parallel="tests">
+    <parameter name="platformVersion" value="15.0"/>
+    <parameter name="udid" value="emulator-5554"/>
+    <parameter name="platformName" value="android"/>
+    <parameter name="systemPort" value="8932"/>
+    <classes>
+      <class name="Test.authen.LoginTest2">
+        <methods>
+          <include name="quitAppiumSession"/>
+          <include name="captureScreenshot"/>
+          <include name="initAppiumSession"/>
+          <include name="testLogin" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- Test.authen.LoginTest2 -->
+      <class name="Test.form.FormTest">
+        <methods>
+          <include name="testFormInput"/>
+          <include name="quitAppiumSession"/>
+          <include name="captureScreenshot"/>
+          <include name="initAppiumSession"/>
+        </methods>
+      </class> <!-- Test.form.FormTest -->
+    </classes>
+  </test> <!-- emulator-5554(failed) -->
+</suite> <!-- Failed suite [Regression] -->

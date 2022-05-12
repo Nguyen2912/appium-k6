@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Regression">
+              <span class="suite-name border-failed">Regression</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Regression">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Regression">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Regression">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Regression">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Regression">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Regression">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Regression">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 5 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="Test.form.FormTest" hash-for-method="testFormInput">testFormInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="Test.authen.LoginTest" hash-for-method="testLogin(LoginCredData{email=&#039;teo@sth.xyz&#039;, password=&#039;1234567&#039;})">testLogin(LoginCredData{email='teo@sth.xyz', password='1234567'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="Test.authen.LoginTest" hash-for-method="testLogin(LoginCredData{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">testLogin(LoginCredData{email='teo@', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="Test.authen.LoginTest2" hash-for-method="testLogin(LoginCredData{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">testLogin(LoginCredData{email='teo@', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="Test.authen.LoginTest2" hash-for-method="testLogin(LoginCredData{email=&#039;teo@sth.xyz&#039;, password=&#039;1234567&#039;})">testLogin(LoginCredData{email='teo@sth.xyz', password='1234567'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods passed suite-Regression"> (hide)</a> <!-- hide-methods passed suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods passed suite-Regression"> (show)</a> <!-- show-methods passed suite-Regression -->
+                    </span>
+                    <div class="method-list-content passed suite-Regression">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="Test.authen.LoginTest" hash-for-method="testLogin(LoginCredData{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">testLogin(LoginCredData{email='teo@sth.com', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="Test.authen.LoginTest2" hash-for-method="testLogin(LoginCredData{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">testLogin(LoginCredData{email='teo@sth.com', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Regression" class="panel Regression">
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test.authen.LoginTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCredData{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCredData{email='teo@', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCredData{email='teo@', password='12345678'})</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	[ERR] Invalid email format str incorrect expected [Please enter a valid email address.] but found [Please enter a valid email address],
+	[ERR] true !=false expected [true] but found [false]
+	at test_flows.authentication.LoginFlow.verifyIncorrectEmailStr(LoginFlow.java:83)
+	at test_flows.authentication.LoginFlow.verifyLogin(LoginFlow.java:56)
+	at Test.authen.LoginTest2.testLogin(LoginTest2.java:19)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCredData{email=&#039;teo@sth.xyz&#039;, password=&#039;1234567&#039;})">
+                  </a> <!-- testLogin(LoginCredData{email='teo@sth.xyz', password='1234567'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCredData{email='teo@sth.xyz', password='1234567'})</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	[ERR] Invalid email format str incorrect expected [Please enter at least 8 characters.] but found [Please enter at least 8 characters],
+	[ERR] true !=false expected [true] but found [false]
+	at test_flows.authentication.LoginFlow.verifyIncorrectPasswordStr(LoginFlow.java:95)
+	at test_flows.authentication.LoginFlow.verifyLogin(LoginFlow.java:60)
+	at Test.authen.LoginTest2.testLogin(LoginTest2.java:19)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test.form.FormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFormInput">
+                  </a> <!-- testFormInput -->
+                  <span class="method-name">testFormInput</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-UQV7475&apos;, ip: &apos;192.168.159.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.wdiodemoapp.MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.wdiodemoapp.MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, platformName: android, server:CONFIG_UUID: f606eb66-7cb5-4c66-9745-191..., systemPort: 8932, udid: emulator-5554}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: android, platformVersion: 11, server:CONFIG_UUID: f606eb66-7cb5-4c66-9745-191..., statBarHeight: 135, systemPort: 8932, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1902, left: 0, top: 135, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ec10c6d5-b474-4e9e-a1bc-30c67a2146a5
+*** Element info: {Using=accessibility id, value=Forms}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at models.components.BottomNavComponent.clickOnFormsIcon(BottomNavComponent.java:32)
+	at test_flows.BaseFlow.gotoFormScreen(BaseFlow.java:19)
+	at Test.form.FormTest.testFormInput(FormTest.java:13)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test.authen.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCredData{email=&#039;teo@sth.xyz&#039;, password=&#039;1234567&#039;})">
+                  </a> <!-- testLogin(LoginCredData{email='teo@sth.xyz', password='1234567'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCredData{email='teo@sth.xyz', password='1234567'})</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	[ERR] Invalid email format str incorrect expected [Please enter at least 8 characters.] but found [Please enter at least 8 characters],
+	[ERR] true !=false expected [true] but found [false]
+	at test_flows.authentication.LoginFlow.verifyIncorrectPasswordStr(LoginFlow.java:95)
+	at test_flows.authentication.LoginFlow.verifyLogin(LoginFlow.java:60)
+	at Test.authen.LoginTest.testLogin(LoginTest.java:18)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCredData{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCredData{email='teo@', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCredData{email='teo@', password='12345678'})</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	[ERR] Invalid email format str incorrect expected [Please enter a valid email address.] but found [Please enter a valid email address],
+	[ERR] true !=false expected [true] but found [false]
+	at test_flows.authentication.LoginFlow.verifyIncorrectEmailStr(LoginFlow.java:83)
+	at test_flows.authentication.LoginFlow.verifyLogin(LoginFlow.java:56)
+	at Test.authen.LoginTest.testLogin(LoginTest.java:18)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.authen.LoginTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCredData{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCredData{email='teo@sth.com', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCredData{email='teo@sth.com', password='12345678'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-passed -->
+          <div class="suite-Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.authen.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCredData{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCredData{email='teo@sth.com', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCredData{email='teo@sth.com', password='12345678'})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-passed -->
+        </div> <!-- panel Regression -->
+        <div panel-name="test-xml-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;10&quot; name=&quot;Regression&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; name=&quot;R28M804D20E&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;platformVersion&quot; value=&quot;15.0&quot;/&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;R28M804D20E&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;android&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;8869&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Test.authen.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- R28M804D20E --&gt;
+  &lt;test thread-count=&quot;10&quot; name=&quot;emulator-5554&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;platformVersion&quot; value=&quot;15.0&quot;/&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;emulator-5554&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;android&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;8932&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Test.authen.LoginTest2&quot;/&gt;
+      &lt;class name=&quot;Test.form.FormTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- emulator-5554 --&gt;
+&lt;/suite&gt; &lt;!-- Regression --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">R28M804D20E (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">emulator-5554 (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Regression');
+function tableData_Regression() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testLogin')
+data.setCell(0, 2, 'Test.authen.LoginTest2')
+data.setCell(0, 3, 19727);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testLogin')
+data.setCell(1, 2, 'Test.authen.LoginTest')
+data.setCell(1, 3, 14282);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testLogin')
+data.setCell(2, 2, 'Test.authen.LoginTest2')
+data.setCell(2, 3, 7449);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLogin')
+data.setCell(3, 2, 'Test.authen.LoginTest')
+data.setCell(3, 3, 6399);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLogin')
+data.setCell(4, 2, 'Test.authen.LoginTest2')
+data.setCell(4, 3, 5704);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testFormInput')
+data.setCell(5, 2, 'Test.form.FormTest')
+data.setCell(5, 3, 5103);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLogin')
+data.setCell(6, 2, 'Test.authen.LoginTest')
+data.setCell(6, 3, 4998);
+window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <div id="times-div-Regression">
+              </div> <!-- times-div-Regression -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Test.form.FormTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">initAppiumSession</span>
+                <br/>
+                <span class="ignored-method-name">quitAppiumSession</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initAppiumSession(R28M804D20E, 8869, android, 15.0)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initAppiumSession(emulator-5554, 8932, android, 15.0)</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCredData{email='teo@', password='12345678'})</span>
+                <span class="method-start">136 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCredData{email='teo@', password='12345678'})</span>
+                <span class="method-start">136 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot([TestResult name=testLogin status=FAILURE method=LoginTest.testLogin(test_data.models.LoginCredData)...)</span>
+                <span class="method-start">14536 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCredData{email='teo@sth.xyz', password='1234567'})</span>
+                <span class="method-start">15065 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot([TestResult name=testLogin status=FAILURE method=LoginTest2.testLogin(test_data.models.LoginCredData...)</span>
+                <span class="method-start">19867 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot([TestResult name=testLogin status=FAILURE method=LoginTest.testLogin(test_data.models.LoginCredData)...)</span>
+                <span class="method-start">20065 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCredData{email='teo@sth.xyz', password='1234567'})</span>
+                <span class="method-start">20477 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLogin(LoginCredData{email='teo@sth.com', password='12345678'})</span>
+                <span class="method-start">20483 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot([TestResult name=testLogin status=FAILURE method=LoginTest2.testLogin(test_data.models.LoginCredData...)</span>
+                <span class="method-start">26185 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testLogin(LoginCredData{email='teo@sth.com', password='12345678'})</span>
+                <span class="method-start">26706 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot([TestResult name=testLogin status=SUCCESS method=LoginTest.testLogin(test_data.models.LoginCredData)...)</span>
+                <span class="method-start">26886 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">quitAppiumSession</span>
+                <span class="method-start">26891 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot([TestResult name=testLogin status=SUCCESS method=LoginTest2.testLogin(test_data.models.LoginCredData...)</span>
+                <span class="method-start">34157 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.form.FormTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFormInput</span>
+                <span class="method-start">34160 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot([TestResult name=testFormInput status=FAILURE method=FormTest.testFormInput()[pri:0, instance:Test.f...)</span>
+                <span class="method-start">39266 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.authen.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">quitAppiumSession</span>
+                <span class="method-start">40320 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
